@@ -1,5 +1,8 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import './quotes.css';
+
+
 //App component
 
 class Quotes extends React.Component{
@@ -64,7 +67,8 @@ class QuoteBox extends React.Component {
                     <div id="author">{this.state.quoteAuthor}</div>
                 </div>
                 <button onClick={this.handleNewQuote} id="new-quote">Get New quote</button>
-
+                <a href={ this.state.tweetUrl } target="_blank" id="tweet-quote">
+                    <i className="fab fa-twitter"></i> Tweet Quote</a>
 
             </main>
 
