@@ -1,0 +1,53 @@
+
+#quote-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 800px;
+    width: 98%;
+    max-height: 500px;
+    min-height: 150px;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: black;
+    background: #E0FFFF;
+    transition: all 200ms cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+
+#quote-content{
+    max-height: calc(100% - 140px);
+    height: auto;
+    position: relative;
+    width: calc(100% - 180px);
+    margin: 60px 90px 80px;
+}
+button#new-quote, a#tweet-quote{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background: lighten(gray, 25%);
+    border: 1px solid darken(gray, 5%);
+    border-radius: 4px;
+    padding: 8px 12px;
+    text-transform: uppercase;
+    color: darken(gray, 25%);
+    /*font-family: $defaultFont;*/
+    font-size: 1em;
+    transition: all 200ms cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    cursor: pointer;
+}
+
+#text{
+    font-size: 2em;
+    position: relative;
+}
+
+#author{
+    position: relative;
+    text-align: right;
+    font-style: italic;
+    font-size: 1.2em;
+    padding-top: 30px;
+}
